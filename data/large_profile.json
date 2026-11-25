@@ -1,0 +1,57 @@
+{
+  "id": "large-integer-inner-product",
+  "parameters": {
+    "groups": 1,
+    "stride": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "padding": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "input_zero_point": -128,
+    "input_scale": 0.01,
+    "weight_scale": 0.01,
+    "output_scale": 1,
+    "output_zero_point": 0
+  },
+  "arrays": {
+    "input": {
+      "shape": [
+        1,
+        16384,
+        3,
+        3
+      ],
+      "pattern": "constant",
+      "dtype": "int8",
+      "value": 127
+    },
+    "weight": {
+      "shape": [
+        1,
+        16384,
+        3,
+        3
+      ],
+      "pattern": "constant",
+      "dtype": "int8",
+      "value": 127
+    },
+    "bias": {
+      "shape": [
+        1
+      ],
+      "pattern": "constant",
+      "dtype": "float64",
+      "value": 0
+    }
+  }
+}
