@@ -1,0 +1,104 @@
+{
+  "weight_revision": "w1",
+  "domain_revision": "dom1",
+  "convolution": {
+    "groups": 2,
+    "stride": [
+      1,
+      1
+    ],
+    "dilation": [
+      1,
+      1
+    ],
+    "padding": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "collections": [
+    {
+      "batch_id": "cal-a-1",
+      "domain": "a",
+      "tensor": "cal_a",
+      "role": "calibration",
+      "valid_channels": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "batch_id": "cal-a-2",
+      "domain": "a",
+      "tensor": "cal_b",
+      "role": "calibration",
+      "valid_channels": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "batch_id": "cal-b-1",
+      "domain": "b",
+      "tensor": "cal_a",
+      "role": "calibration",
+      "valid_channels": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "batch_id": "hold-a",
+      "domain": "a",
+      "tensor": "holdout",
+      "role": "holdout",
+      "frame_ids": [
+        "ha-1",
+        "ha-2"
+      ]
+    },
+    {
+      "batch_id": "hold-b",
+      "domain": "b",
+      "tensor": "holdout",
+      "role": "holdout",
+      "frame_ids": [
+        "hb-1",
+        "hb-2"
+      ]
+    }
+  ],
+  "output_scale": 0.05,
+  "output_zero_point": 4,
+  "error_limits": {
+    "max_abs": 0.25,
+    "rms": 0.08
+  },
+  "profiles": [
+    {
+      "kernel": 3,
+      "stride": 1,
+      "dilation": 1,
+      "groups": 2
+    },
+    {
+      "kernel": 3,
+      "stride": 2,
+      "dilation": 2,
+      "groups": 2
+    },
+    {
+      "kernel": 1,
+      "stride": 1,
+      "dilation": 1,
+      "groups": 1
+    }
+  ]
+}

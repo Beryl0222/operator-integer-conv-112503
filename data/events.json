@@ -1,0 +1,38 @@
+[
+  {
+    "id": "publish-and-invalidate",
+    "events": [
+      {
+        "kind": "build",
+        "domain": "a"
+      },
+      {
+        "kind": "build",
+        "domain": "b"
+      },
+      {
+        "kind": "request_begin",
+        "request_id": "r1",
+        "domain": "a"
+      },
+      {
+        "kind": "withdraw",
+        "batch_id": "cal-a-1"
+      },
+      {
+        "kind": "weight_revision",
+        "revision": "w2",
+        "bias_delta": 0.1
+      },
+      {
+        "kind": "request_begin",
+        "request_id": "r2",
+        "domain": "a"
+      },
+      {
+        "kind": "query_completed",
+        "request_id": "r1"
+      }
+    ]
+  }
+]

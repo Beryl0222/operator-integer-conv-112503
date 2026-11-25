@@ -1,0 +1,13 @@
+{
+  "product": "校准覆盖约束下的整数卷积模型发布",
+  "provenance": "所有数值、实体和事件均为本地合成资料，不代表真实用户或已发生事故。",
+  "format_revision": 1,
+  "tensors": {
+    "weight": "data/tensors/weight.json",
+    "bias": "data/tensors/bias.json",
+    "cal_a": "data/tensors/cal_a.json",
+    "cal_b": "data/tensors/cal_b.json",
+    "holdout": "data/tensors/holdout.json",
+    "integer_input": "data/tensors/integer_input.json"
+  }
+}
