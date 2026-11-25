@@ -86,19 +86,22 @@
       "kernel": 3,
       "stride": 1,
       "dilation": 1,
-      "groups": 2
+      "groups": 2,
+      "tensor": "weight"
     },
     {
       "kernel": 3,
       "stride": 2,
       "dilation": 2,
-      "groups": 2
+      "groups": 2,
+      "tensor": "weight"
     },
     {
       "kernel": 1,
       "stride": 1,
       "dilation": 1,
-      "groups": 1
+      "groups": 1,
+      "tensor": "weight_1x1"
     }
   ]
 }

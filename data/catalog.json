@@ -8,6 +8,7 @@
     "cal_a": "data/tensors/cal_a.json",
     "cal_b": "data/tensors/cal_b.json",
     "holdout": "data/tensors/holdout.json",
-    "integer_input": "data/tensors/integer_input.json"
+    "integer_input": "data/tensors/integer_input.json",
+    "weight_1x1": "data/tensors/weight_1x1.json"
   }
 }
